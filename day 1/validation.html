@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            display: inline-block;
+            width: 80px;
+            padding: 5px;
+        }
+        button{
+            margin-left: 95px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="get">
+        <div>
+            <label for="uname">username</label>
+            <input required type="text" name="username" id="unmae"/>
+        </div>
+        <div>
+            <label for="unum">userage</label>
+            <input type="number" min ="18" max ="80" required name="userage" id="unum">
+        </div>
+        <div>
+            <label for="umail">user email</label>
+            <input type="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required name="user email" id="umail">
+        </div>
+        <div>
+            <label for="uphn">userphn</label>
+            <input required title = "###-####-####" placeholder="###-####-####" pattern="\d{3}-\d{4}-\d{4}" type="tel" name="user phn" id="uphn"/>
+        </div>
+        <button>
+            submit
+        </button>
+    </form>
+</body>
+</html>

@@ -5,11 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script type="text/javascript" src="https://chir.ag/projects/ntc/ntc.js"></script>
     <script>
         function setInputValue(source, target){
             document.getElementById(target).textContent = source.value;
         }
+        function showcolor(source, target){
+            document.getElementById(target).style.color = source.value;
+            var n_match = ntc.name(source.value);
+            n_rgb = n_match[0];
+            n_name = n_match[1];
+            document.getElementById(target).textContent = n_name;
+        }
+        
+        
     </script>
+
 </head>
 <body>
     <table>
@@ -33,23 +44,9 @@
             </tr>
             <tr>
                 <td> Color </td>
-                <td> <input type="color" oninput="setInputValue(this,'color')"/> </td>
+                <td> <input type="color" oninput="showcolor(this,'color')"/> </td>
                 <td> <output id="color"></output></td>
             </tr>
-           
-                <script type="text/javascript" src="https://chir.ag/projects/ntc/ntc.js"></script>
-
-<script type="text/javascript">
-
-  var n_match = ntc.name(getElementById(color));
-  n_rgb = n_match[0];
-  n_name = n_match[1]; 
-  n_exactmatch = n_match[2]; 
-
-  alert(n_match);
-
-</script>; 
-            
             <tr>
                 <td> Range </td>
                 <td> <input type="range" oninput="setInputValue(this,'range')"/> </td>

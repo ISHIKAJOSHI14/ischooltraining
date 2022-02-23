@@ -36,6 +36,20 @@
                 <td> <input type="color" oninput="setInputValue(this,'color')"/> </td>
                 <td> <output id="color"></output></td>
             </tr>
+           
+                <script type="text/javascript" src="https://chir.ag/projects/ntc/ntc.js"></script>
+
+<script type="text/javascript">
+
+  var n_match = ntc.name(getElementById(color));
+  n_rgb = n_match[0];
+  n_name = n_match[1]; 
+  n_exactmatch = n_match[2]; 
+
+  alert(n_match);
+
+</script>; 
+            
             <tr>
                 <td> Range </td>
                 <td> <input type="range" oninput="setInputValue(this,'range')"/> </td>

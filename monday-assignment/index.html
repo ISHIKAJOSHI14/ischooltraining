@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geeting Card</title>
+    <STYLE>
+    canvas{
+    background-color: #e2c3ee;
+    border: 5px solid rgb(55, 6, 70);
+    border-radius: 4px;
+    box-shadow: 0 2px 3px rgb(190, 162, 192);
+    padding: 20px;
+    margin-bottom: 20px;
+    }
+    </STYLE>
+</head>
+<body>
+    <form action="#" method="get">
+        <label for="name">Name: </label>
+        <input type="text", id="name">
+        <label for="bdate">Birthday Date: </label>
+        <input type="date", id="bdate">
+
+        <button id="btn" onclick="Card()">Generate Card</button>
+    </form>
+
+    <hr/>
+
+    <canvas id="can"></canvas>
+    <script src="./animation.js"></script>
+</body>
+</html>>

@@ -1,0 +1,79 @@
+@media print {
+    article {
+      width: 100px;
+      height: 100px;
+      border: 1px solid black;
+    }
+  }
+  
+  @media screen and (min-width: 1300px) {
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: violet;
+      text-align: center;
+      line-height: 100px;
+      font-size: 36;
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      float: left;
+      border: 1px solid black;
+    }
+  }
+  
+  @media screen and (min-width: 1100px) and (max-width: 1299px) {
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: indigo;
+      text-align: center;
+      line-height: 100px;
+      font-size: 36;
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      float: left;
+      border: 1px solid black;
+    }
+  }
+  @media screen and (min-width: 900px) and (max-width: 1099px) {
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      text-align: center;
+      line-height: 100px;
+      font-size: 36;
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      float: left;
+      border: 1px solid black;
+    }
+  }
+  @media screen and (min-width: 700px) and (max-width: 899px) {
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      text-align: center;
+      line-height: 100px;
+      font-size: 36;
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      float: left;
+      border: 1px solid black;
+    }
+  }
+  @media screen and (max-width: 699px) {
+    article {
+      width: 100px;
+      height: 100px;
+      background-color: yellow;
+      text-align: center;
+      line-height: 100px;
+      font-size: 36;
+      font-weight: bold;
+      font-family: "Trebuchet MS";
+      float: left;
+      border: 1px solid black;
+    }
+  }

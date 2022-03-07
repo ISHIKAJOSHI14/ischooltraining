@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function setInputValue(source, target){
+            document.getElementById(target).textContent = source.value;
+        }
+        function showcolor(source, target){
+            document.getElementById(target).style.color = source.value;
+            var n_match = ntc.name(source.value);
+            n_rgb = n_match[0];
+            n_name = n_match[1];
+            document.getElementById(target).textContent = n_name;
+        }
+        
+        
+    </script>
+
+    <style>
+        body{
+            margin: 50px;
+            border: 10px  black;
+            padding: 40px;
+        }
+    </style>
+    <script>
+        document.write("Title: " + document.title);
+    </script>
+</head>
+
+<body>
+    <hr><br>
+    <form name="details">
+        <input name="fullname" type="name">
+        <br>
+        <input name="email" type="email">
+        <br>
+        <input name="telephone" type="tel">
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+    <br>
+    <hr>
+
+    <img src="images/1.jpg" width="500px">
+    <img src="images/2.jpg" width="500px">
+    <p>URL of the images:</p>
+    <p id="source"></p>
+    <hr>
+
+    <p>The number of script elements in the document:</p>
+    <p id="demo"></p>
+    <hr>
+
+    <p>The domain name of my favourite website is:</p>
+    <p id="domainn"></p>
+    <hr>
+
+    <p>
+        <a href="step-32.html">Step 32</a><br>
+        <a href="step-33.html">Step 33</a><br>
+        <a href="step-34.html">Step 34</a><br>
+        <a href="step-35.html">Step 35</a><br>
+        <a href="step-36.html">Step 36</a><br>
+        <a href="step-37.html">Step 37</a><br>
+    </p>
+
+  
+    <script>
+        document.body.style.backgroundColor = "#d6f4fa";
+        var y = document.forms[0].reset();
+        var Form = document.forms["details"]
+        Form.elements.fullname.placeholder = "your name";
+        Form.elements.email.placeholder = "test@example.com";
+        Form.elements.telephone.placeholder = "##########";
+        const myImages = document.images;
+        let text = "";
+        for (let i = 0; i < myImages.length; i++) {
+            text += myImages[i].src + "<br>";
+        }
+        document.getElementById("source").innerHTML = text;
+
+        // implementing document.scripts
+        var num = document.links.length;
+        document.write("Number of links: " + num);
+
+        // implementing document.cookie 
+        alert(document.cookie);
+
+        // implementing document.domain
+        let myDomain = "https://www.google.com/";
+        document.getElementById("domainn").innerHTML = myDomain;
+    </script>
+    </script>
+</body>
+
+</html>

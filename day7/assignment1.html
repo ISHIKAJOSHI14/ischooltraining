@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+<body>
+    <h1>String Methods implementations in javascript</h1>
+    <script>
+        //creating string
+const s ="A string to implement string methods";
+console.log(s);
+// output : A string
+
+//using charAt 
+var a = s.charAt(3); 
+console.log(a);
+// output : t
+a = s.charAt(s.length - 2);
+console.log(a);
+// output : d
+
+
+//using substring
+console.log(s.substring(2,));
+// output : string to implement string methods
+
+
+//using slice
+console.log(s.slice(-8));
+// output : methods
+
+
+
+//using indexof
+console.log(s.indexOf("r"));
+// output : 4
+console.log(s.indexOf("t", 15))
+// output : 20
+
+//using lastindexof
+console.log(s.lastIndexOf("t"))
+// output : 31
+
+//using split
+a = s.split(" ");
+console.log(a);
+// output : ['A', 'string', 'to', 'implement', 'string', 'methods']
+
+//using replace
+console.log(s.replace("t","T"));
+
+
+//using touppercase
+console.log(s.toUpperCase());
+
+//using tolowercase
+console.log(s.toLowerCase());
+    </script>
+</body>
+</html>

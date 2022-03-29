@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>triangle</title>
+    <style>
+        canvas{
+           border: 1px solid black;
+       }
+   </style>
+   <script>
+        var can, ctx;
+   addEventListener("load", init);
+   function init(){
+       can = document.getElementsByTagName("canvas")[0];
+       can.width = 500;
+       can.height = 500;
+       ctx = can.getContext("2d");
+        ctx.fillStyle = "rgba(40,200,200,0.5)";
+        //ctx.fillStyle= 'red';
+        ctx.moveTo(200,200);
+        ctx.lineTo(300,350);
+        ctx.lineTo(100,350);
+        ctx.lineTo(200,200);
+        ctx.stroke();
+        ctx.fill();
+
+    }
+    </script>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+</html>

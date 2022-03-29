@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star</title>
+    <style>
+        canvas{
+           border: 1px solid black;
+       }
+   </style>
+   <script>
+        var can, ctx;
+   addEventListener("load", init);
+   function init(){
+       can = document.getElementsByTagName("canvas")[0];
+       can.width = 1000;
+       can.height = 1000;
+       ctx = can.getContext("2d");
+       //ctx.closePath();
+       /*ctx.moveTo(190,150);
+       ctx.lineTo(275,300);
+       ctx.lineTo(110,200);
+       ctx.lineTo(275,200);
+       ctx.lineTo(110,300);
+       ctx.lineTo(190,150);
+       
+
+       ctx.stroke();
+       //ctx.fill();*/
+
+       ///star with diffrently colored areas
+       //pentagon
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(255,26,26,1)";
+       ctx.moveTo(300,200);
+       ctx.lineTo(490,200);
+       ctx.lineTo(575,330);
+       ctx.lineTo(370,430);
+       ctx.lineTo(220,340);
+       ctx.lineTo(300,200);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+
+        //t1
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(128, 255, 128,1)";
+       ctx.moveTo(300,200);
+       ctx.lineTo(400,50);
+       ctx.lineTo(490,200);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+
+        //t2
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(102, 102, 255,1)";
+       ctx.moveTo(490,200);
+       ctx.lineTo(800,200);
+       ctx.lineTo(575,330);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+
+
+        //t3
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(255, 255, 51,1)";
+       ctx.moveTo(575,330);
+       ctx.lineTo(700,550);
+       ctx.lineTo(370,430);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+
+
+        //t4
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(210, 121, 121,1)";
+       ctx.moveTo(370,430);
+       ctx.lineTo(75,550);
+       ctx.lineTo(220,340);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+
+
+        //t5
+       ctx.beginPath();
+       ctx.fillStyle = "rgba(77, 77, 0,1)";
+       ctx.moveTo(220,340);
+       ctx.lineTo(20,200);
+       ctx.lineTo(300,200);
+       ctx.closePath();
+       ctx.stroke();
+       ctx.fill();
+   }
+    </script>
+</head>
+<body>
+    <canvas></canvas>
+</body>
+</html>

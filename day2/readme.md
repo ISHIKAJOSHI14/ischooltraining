@@ -1,5 +1,6 @@
 <h1>ASSIGNMENTS</h1>
 <hr>
+
 [Implement local storage properties](/day2/step7-storage-local.html)
 
 <hr>

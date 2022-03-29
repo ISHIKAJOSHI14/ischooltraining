@@ -1,6 +1,5 @@
 <h2> ASSIGNMENTS </h2>
 
-<hr>
 
 <h3>Assignment 1</h3>
 

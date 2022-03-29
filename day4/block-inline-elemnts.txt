@@ -1,0 +1,41 @@
+Block level Elements  --------------
+    1. <div>
+    2. <footer>
+    3. <h1>,<h2>,<h3>,<h4>,<h5>,<h6>
+    4. <header>
+    5. <hr>
+    6. <nav> 
+    7. <p>
+    8. <section>
+    9. <dl>
+    10. <article>
+    11. <fieldset>
+    12. <figcaption>
+    13. <figure>
+    14. <aside>
+    15. <form>
+    16. <blockquote>
+    17. <address>
+    18. <hgroup>
+    19. <dt>
+    20. <li>
+    21. <main>
+    22. <dd>
+    23. <ol>
+    24. <details>
+    25. <pre>
+    26. <dialog>
+    27. <table>
+    28. <ul>
+
+
+
+Inline Elements-----------------
+    1. <canvas>
+    2. <br>
+    3. <img>
+    4. <button>
+    5. <span>
+    6. <script>
+    7. <label>
+    8. <input>
